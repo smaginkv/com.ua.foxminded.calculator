@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*  General Styling  */
+body {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.block {
+    background: #041011;
+    width: 250px;
+    height: 320px;
+    margin: 60px;
+    padding: 10px;
+}
+
+.block__element {
+    background: #f5f6f1;
+    width: 55px;
+    height: 55px;
+    color: #366bd0;
+    text-align: center;
+}
+
+.block__result {
+    background: #f5f6f1;
+    width: 250px;
+    height: 25px;
+    color: #041011;
+    text-align: right;
+    margin: 15px;
+}
+
+/*  Flexbox CSS Styling  */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-element {
+    flex-grow: 1;
+}

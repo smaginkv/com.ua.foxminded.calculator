@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+<link rel="stylesheet" href="main.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+    <div class="block flex-container">
+        <button class="block__element flex-element"
+            onclick="proccessDigit(0)">0</button>
+        <button class="block__element flex-element"
+            onclick="proccessDigit(0);proccessDigit(0)">00</button>
+        <button class="block__element flex-element"
+            onclick="proccessCalculationElements()">=</button>
+        <button class="block__element flex-element"
+            onclick="proccessOperation(&quot;+&quot;)">+</button>
+
+        <button class="block__element flex-element"
+            onclick="proccessDigit(1)">1</button>
+        <button class="block__element flex-element"
+            onclick="proccessDigit(2)">2</button>
+        <button class="block__element flex-element"
+            onclick="proccessDigit(3)">3</button>
+        <button class="block__element flex-element"
+            onclick="proccessOperation(&quot;-&quot;)">-</button>
+
+        <button class="block__element flex-element"
+            onclick="proccessDigit(4)">4</button>
+        <button class="block__element flex-element"
+            onclick="proccessDigit(5)">5</button>
+        <button class="block__element flex-element"
+            onclick="proccessDigit(6)">6</button>
+        <button class="block__element flex-element"
+            onclick="proccessOperation(&quot;*&quot;)">*</button>
+
+        <button class="block__element flex-element"
+            onclick="proccessDigit(7)">7</button>
+        <button class="block__element flex-element"
+            onclick="proccessDigit(8)">8</button>
+        <button class="block__element flex-element"
+            onclick="proccessDigit(9)">9</button>
+        <button class="block__element flex-element"
+            onclick="proccessOperation(&quot;/&quot;)">/</button>
+
+        <button class="block__element flex-element"
+            onclick="cancelLastOperation()">CE</button>
+        <button class="block__element flex-element"
+            onclick="cancelAllOperation()">C</button>
+        <input class="block__result flex-element" type="text" id="result">
+    </div>
+</body>
+</html>
